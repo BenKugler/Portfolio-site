@@ -10,20 +10,19 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Ideas
+-> [Flowing Background](https://codepen.io/y_endo/pen/gObOxoM?editors=1010)
+-> [CSS Animated Words](https://codepen.io/alphardex/pen/WNNVJeZ)
+-> [Scroll To For Sections](https://github.com/rigor789/vue-scrollTo)
+-> [LRU Cache](https://www.npmjs.com/package/lru-cache)
+-> [Header && SubHeader Font](https://rubjo.github.io/victor-mono/)
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+Background color -> #212529
+Font -> 'Titillium Web', sans-serif, VictorMono
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+What to do
+-> Links on top jump to sections (Each section max page size)
+-> Programming section has "window" Vuetify component for each project (click panel to expand and read more?)
+-> About Me
