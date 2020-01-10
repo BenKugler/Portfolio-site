@@ -44,12 +44,25 @@ class Visual {
 
     createParticle(id) {
         const radius = random(1, this.particleMaxRadius);
-        const x = random(0, this.canvasWidth);
+        const x = random(0, -this.canvasWidth);
         let y = random(this.canvasHeight / 2 - 350, this.canvasHeight / 2 + 350);
         y += random(-100, 100);
         const alpha = random(0.05, 0.5);
 
-        let purpleShade = random(52, 130);
+        const redPink = { r: 255, g: 137, b: 255 }
+        const red = { r: 255, g: 137, b: 196 }
+        const pink = { r: 156, g: 77, b: 64 }
+
+        let colorObject = {};
+        let colorChoice = Math.floor((Math.random() * 3) + 1);;
+        switch (colorChoice) {
+            case 1: colorObject = redPink;
+                break;
+            case 2: colorObject = red;
+                break;
+            case 3: colorObject = pink;
+                break;
+        }
 
         return {
             id: id,
@@ -60,7 +73,7 @@ class Visual {
             startAngle: 0,
             endAngle: Math.PI * 2,
             alpha: alpha,
-            color: { r: purpleShade, g: 0, b: purpleShade },
+            color: colorObject,
             speed: alpha + 1,
             amplitude: random(50, 200)
         };

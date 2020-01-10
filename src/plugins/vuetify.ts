@@ -7,16 +7,9 @@ Vue.use(Vuetify);
 export default new Vuetify({
   theme: {
     dark: {
-      primary: '#212529',
-      secondary: '#b0bec5',
-      accent: '#8c9eff',
-      error: '#b71c1c',
-    },
-    light: {
-      primary: '#3f51b5',
-      secondary: '#b0bec5',
-      accent: '#8c9eff',
-      error: '#b71c1c',
+      primary: '#9c4d40',
+      secondary: '#ff89c4',
+      accent: '#ff89ff',
     },
   },
   options: {

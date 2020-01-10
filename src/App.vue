@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <canvas id="canvas"></canvas>
-    <v-container>
-      <NavigationBar/>
+    <v-container id="container-override">
+      <NavigationBar />
       <router-view></router-view>
     </v-container>
   </v-app>
@@ -19,7 +19,6 @@ import 'victormono';
     NavigationBar,
   },
 })
-
 export default class App extends Vue {
   private mounted() {
     require('./scripts/flow');
@@ -30,7 +29,6 @@ export default class App extends Vue {
 <style>
 .theme--dark.v-application {
   background: #212529 !important;
-  color: #ffffff;
 }
 
 body {
@@ -45,17 +43,26 @@ body {
   height: 100%;
 }
 
-h1 {
-  font-family: "Victor Mono", sans-serif;
+#container-override {
+  padding: 0px !important;
 }
 
 .subtitle-font {
-  font-family: "Titillium Web", sans-serif !important;
+  font-family: 'Titillium Web', sans-serif !important;
   font-weight: 300;
   opacity: 0.7;
 }
 
+.headline-custom {
+  font-size: 1.5rem !important;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal !important;
+  font-family: 'Victor Mono', sans-serif !important;
+  color: #9c4d40;
+}
+
 .v-btn__content {
-  font-family: "Titillium Web", sans-serif !important;
+  font-family: 'Titillium Web', sans-serif !important;
 }
 </style>
