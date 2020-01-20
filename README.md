@@ -1,5 +1,3 @@
-# Portfolio
-
 ## Project Description
 A simple page to display my projects and to mess around with. Built with VueJS and Vueitfy.
 
@@ -28,6 +26,8 @@ npm run serve
 - [ ] Caching
 - [ ] Mobile version
 - [ ] [Correct Font loading](https://web.dev/font-display/)
+- [ ] [Async loading](https://medium.com/@vladislavs.korehovs/optimizing-vue-vuetify-performance-async-loading-5e13ca43706e)
+- [ ] [Correct render blocking resources](https://web.dev/render-blocking-resources/)
 - [ ] Add Favicon
 - [ ] About Me section
 - [ ] Add more projects
