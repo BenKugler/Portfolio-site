@@ -12,7 +12,6 @@
 import Vue from 'vue';
 import NavigationBar from '@/components/NavigationBar.vue';
 import { Component } from 'vue-property-decorator';
-import 'victormono';
 
 @Component({
   components: {
@@ -59,7 +58,7 @@ body {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: normal !important;
-  font-family: 'Victor Mono', sans-serif !important;
+  font-family: 'Titillium Web', sans-serif !important;
   color: #9c4d40;
   padding-top: 10px
 }

@@ -55,7 +55,7 @@ export default class NavigationBar extends Vue {
   private about: string = this.$store.getters.aboutSelector(true);
   private options: object = {
     easing: 'easeInQuad',
-    duration: '500'
+    duration: '500',
   };
 
   private GotoSection(section: object) {

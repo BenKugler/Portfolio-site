@@ -31,7 +31,7 @@ import goTo from 'vuetify/es5/services/goto';
 export default class Portfolio extends Vue {
   private options: object = {
     easing: 'easeInQuad',
-    duration: '500'
+    duration: '500',
   };
 
   private onIntersectHome(entries, observer) {
