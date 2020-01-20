@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <canvas id="canvas"></canvas>
+    <canvas id="flow-canvas"></canvas>
     <v-container id="container-override">
       <NavigationBar />
       <router-view></router-view>
@@ -34,9 +34,10 @@ export default class App extends Vue {
 body {
   width: 100vw;
   height: 100vh;
+  text-rendering: optimizeLegibility;
 }
 
-#canvas {
+#flow-canvas {
   position: fixed;
   display: block;
   width: 100%;
@@ -60,9 +61,49 @@ body {
   letter-spacing: normal !important;
   font-family: 'Victor Mono', sans-serif !important;
   color: #9c4d40;
+  padding-top: 10px
 }
 
 .v-btn__content {
   font-family: 'Titillium Web', sans-serif !important;
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif !important;
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.4 !important;
+  text-align: left;
+}
+
+h3 {
+  font-family: 'Titillium Web', sans-serif !important;
+  font-weight: 300;
+  color: #e6e6e6;
+  font-size: 2em;
+}
+
+h4 {
+  font-family: 'Titillium Web', sans-serif !important;
+  font-weight: 300;
+  color: #e6e6e6;
+  font-size: 1.4em;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+font {
+  font-family: 'Titillium Web', sans-serif !important;
+  font-weight: 300;
+  color: #e6e6e6;
+  font-size: 1.1em;
+}
+
+.v-application a {
+    text-decoration-line: none;
+}
+
+.v-application a:hover {
+    color: #9c4054;
 }
 </style>

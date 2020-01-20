@@ -4,7 +4,7 @@ function random(low, high) {
 
 class Visual {
     constructor() {
-        this.canvas = document.querySelector('#canvas');
+        this.canvas = document.querySelector('#flow-canvas');
         if (this.canvas == undefined || this.canvas == null) return;
         this.context = this.canvas.getContext('2d');
         this.canvasWidth = 0;

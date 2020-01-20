@@ -54,7 +54,8 @@ export default class NavigationBar extends Vue {
   private projects: string = this.$store.getters.projectsSelector(true);
   private about: string = this.$store.getters.aboutSelector(true);
   private options: object = {
-    easing: 'easeInOutQuint',
+    easing: 'easeInQuad',
+    duration: '500'
   };
 
   private GotoSection(section: object) {
@@ -70,7 +71,8 @@ export default class NavigationBar extends Vue {
 #nav-container {
   position: fixed;
   width: 100%;
-  margin-top: -10px;
+  margin-top: -15px;
+  z-index: 999;
 }
 
 #nav-container-background {
