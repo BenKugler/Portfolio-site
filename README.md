@@ -27,6 +27,8 @@ npm run serve
 - [ ] Correct project descriptions
 - [ ] Caching
 - [ ] Mobile version
+- [ ] [Correct Font loading](https://web.dev/font-display/)
+- [ ] Add Favicon
 - [ ] About Me section
 - [ ] Add more projects
 - [ ] Add WASM WebGL version of GameOfLife
