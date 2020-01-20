@@ -1,5 +1,8 @@
 # Portfolio
 
+## Project Description
+A simple page to display my projects and to mess around with.
+
 ## Project setup
 ```
 npm install
@@ -10,19 +13,20 @@ npm install
 npm run serve
 ```
 
-### Ideas
--> [Flowing Background](https://codepen.io/y_endo/pen/gObOxoM?editors=1010)
--> [CSS Animated Words](https://codepen.io/alphardex/pen/WNNVJeZ)
--> [Scroll To For Sections](https://github.com/rigor789/vue-scrollTo)
--> [LRU Cache](https://www.npmjs.com/package/lru-cache)
--> [Header && SubHeader Font](https://rubjo.github.io/victor-mono/)
+### Tools / Inspiration / Used
+- [Flowing Background](https://codepen.io/y_endo/pen/gObOxoM?editors=1010)
+- [CSS Animated Words](https://codepen.io/alphardex/pen/WNNVJeZ)
+- [LRU Cache](https://www.npmjs.com/package/lru-cache)
+- [Header && SubHeader Font](https://rubjo.github.io/victor-mono/)
 
-
-Background color -> #212529
-Font -> 'Titillium Web', sans-serif, VictorMono
-
-
-What to do
--> Links on top jump to sections (Each section max page size)
--> Programming section has "window" Vuetify component for each project (click panel to expand and read more?)
--> About Me
+### What to do
+- [x] ~~Base Project setup~~
+- [x]  ~~Get WASM to work in project~~
+- [x] ~~Links on top jump to sections (Each section max page size)~~
+- [x] ~~Programming section has "window" Vuetify component for each project (click panel to expand and read more?)~~
+- [ ] Correct project descriptions
+- [ ] Caching
+- [ ] Mobile version
+- [ ] About Me section
+- [ ] Add more projects
+- [ ] Add WASM WebGL version of GameOfLife
