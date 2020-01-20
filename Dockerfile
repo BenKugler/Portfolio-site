@@ -9,6 +9,9 @@ WORKDIR /app
 # copy both 'package.json' and 'package-lock.json' (if available)
 COPY package*.json ./
 
+# Install extra shit
+RUN apk add --no-cache make gcc g++ python
+
 # install project dependencies
 RUN npm install
 
