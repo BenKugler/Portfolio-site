@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Project Description
-A simple page to display my projects and to mess around with.
+A simple page to display my projects and to mess around with. Built with VueJS and Vueitfy.
 
 ## Project setup
 ```
