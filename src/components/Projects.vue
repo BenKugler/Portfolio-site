@@ -118,11 +118,11 @@ export default class Projects extends Vue {
       title: 'MitziKart',
       subtitle: 'Art Gallery with a CMS',
       description:
-        "My mother is a Artist, so when she wanted to show off her art to the world in a controlled manner, she came to me for help. 🙃 Seeing as she didn't \
+        'My mother is a Artist, so when she wanted to show off her art to the world in a controlled manner, she came to me for help. 🙃 Seeing as she didn\'t \
         want to use any of the conventional platforms, I built her a site with a CMS (Content management system) so that she can add, remove and update her content without asking me. \
-        I built this site after working as a fullstack developer at AltSource for 4 month with a software developer title. The frontend is using VueJS combo'd with \
+        I built this site after working as a fullstack developer at AltSource for 4 month with a software developer title. The frontend is using VueJS combo\'d with \
         Vuetify to speed up website creation. The API was built using ASP.NET and a ORM to manage the database. Several optimizations were added to handle images, \
-        something I have had no prior experience with. ",
+        something I have had no prior experience with.',
       tools: 'ASP.NET, Vue, Vuetify',
       languages: 'C#, SQL-T, Vue, Javascript',
       contributors: 'Benjamin Kugler',
