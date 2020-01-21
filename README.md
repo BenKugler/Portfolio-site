@@ -1,16 +1,6 @@
 ## Project Description
 A simple page to display my projects and to mess around with. Built with VueJS and Vueitfy.
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
 ### Tools / Inspiration / Used
 - [Flowing Background](https://codepen.io/y_endo/pen/gObOxoM?editors=1010)
 - [CSS Animated Words](https://codepen.io/alphardex/pen/WNNVJeZ)
