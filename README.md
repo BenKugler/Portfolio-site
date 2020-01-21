@@ -22,6 +22,7 @@ npm run serve
 - [x]  ~~Get WASM to work in project~~
 - [x] ~~Links on top jump to sections (Each section max page size)~~
 - [x] ~~Programming section has "window" Vuetify component for each project (click panel to expand and read more?)~~
+- [X] ~~GIF to WEBM~~
 - [ ] Correct project descriptions
 - [ ] Caching
 - [ ] Mobile version

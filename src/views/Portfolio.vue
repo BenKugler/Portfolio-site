@@ -1,13 +1,19 @@
 <template>
   <div id="portfolio">
     <div class="portfolio-divider">
-      <Home class="portfolio-sections" v-intersect="onIntersectHome" />
+      <Home class="portfolio-sections" v-intersect="onIntersectHome">
+        <v-skeleton-loader class="mx-auto" type="card"></v-skeleton-loader>
+      </Home>
     </div>
     <div class="portfolio-divider add-padding">
-      <Projects class="portfolio-sections" v-intersect="onIntersectPortfolio" />
+      <Projects class="portfolio-sections" v-intersect="onIntersectPortfolio">
+        <v-skeleton-loader class="mx-auto" type="card"></v-skeleton-loader>
+      </Projects>
     </div>
     <div class="portfolio-divider add-padding">
-      <About class="portfolio-sections" v-intersect="onIntersectAbout" />
+      <About class="portfolio-sections" v-intersect="onIntersectAbout">
+        <v-skeleton-loader class="mx-auto" type="card"></v-skeleton-loader>
+      </About>
     </div>
   </div>
 </template>
@@ -15,11 +21,11 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Component, Prop } from 'vue-property-decorator';
-import { IProject } from '@/models/project.interface';
-import Projects from '@/components/Projects.vue';
-import Home from '@/components/Home.vue';
-import About from '@/components/About.vue';
 import goTo from 'vuetify/es5/services/goto';
+const IProject = () => import('@/models/project.interface');
+const Projects = () => import('@/components/Projects.vue');
+const Home = () => import('@/components/Home.vue');
+const About = () => import('@/components/About.vue');
 
 @Component({
   components: {

@@ -4,8 +4,10 @@
       <font class="headline-custom">Home</font>
       <!-- <canvas id="game-of-life-wasm-canvas" height="150" width="150" /> -->
       <v-container class="d-flex justify-center" style="padding-top: 100px">
-        <v-card class="temp-gif">
-          <v-img class="temp-gif" src="../assets/GenOutputG1000W750.gif" />
+        <v-card style="height: 750px; overflow: hidden;" elevation="4">
+          <video class="temp-gif" controls>
+            <source src="../assets/GenOutputG1000W750.webm" />
+          </video>
         </v-card>
       </v-container>
     </v-row>
@@ -40,6 +42,6 @@ export default class Home extends Vue {
 
 <style scoped>
 .temp-gif {
-  width: 600px;
+  width: 750px;
 }
 </style>
