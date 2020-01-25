@@ -6,7 +6,7 @@
         <v-card style="height: 60vh">
           <div>
             <video class="temp-gif" controls>
-              <source src="../assets/GenOutputG1000W750.webm" />
+              <source src="https://portfolio-docs-benjamin-kugler.s3-us-west-2.amazonaws.com/GenOutputG1000W750.webm" />
             </video>
           </div>
         </v-card>
