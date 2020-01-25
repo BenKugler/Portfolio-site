@@ -1,13 +1,12 @@
 <template>
   <v-container :id="this.$store.getters.projectsSelector()">
     <v-col align="center" justify="center">
-      <font class="headline-custom">Projects</font>
-      <v-container id="projects-container">
+      <v-container :id="$vuetify.breakpoint.mdAndDown ? 'projects-container-large' : 'projects-container'">
         <v-row align="center" justify="center">
           <v-col>
             <v-window class="elevation-4" v-model="projects.title">
               <v-window-item v-for="(project, i) in projects" :key="i">
-                <v-card flat id="projects-window">
+                <v-card flat :id="$vuetify.breakpoint.mdAndDown ? 'projects-window-large' : 'projects-window'">
                   <v-card-text class="project">
                     <v-container class="d-flex flex-column justify-space-between" style="height: 100%">
                       <div>
@@ -27,12 +26,17 @@
                         </v-col>
 
                         <v-col align-self="center" class="project-description">
-                          <p><span class="project-description-html" v-html="project.description"></span></p>
+                          <p>
+                            <span
+                              class="project-description-html"
+                              v-html="project.description"
+                            ></span>
+                          </p>
                         </v-col>
                       </div>
 
-                      <div>
-                        <v-col>
+                       <div>
+                          <v-col>
                           <v-row align="center" justify="center">
                             <div v-for="(link, i) in project.links" :key="i">
                               <span
@@ -47,7 +51,7 @@
                             </div>
                           </v-row>
                         </v-col>
-                      </div>
+                       </div>
                     </v-container>
                   </v-card-text>
                 </v-card>
@@ -118,7 +122,7 @@ export default class Projects extends Vue {
       title: 'MitziKart',
       subtitle: 'Art Gallery with a CMS',
       description:
-        'My mother is a Artist, so when she wanted to show off her art to the world in a controlled manner, she came to me for help. 🙃 Seeing as she didn\'t \
+        'My mother is a artist, so when she wanted to show off her art to the world in a controlled manner, she came to me for help. 🙃 Seeing as she didn\'t \
         want to use any of the conventional platforms, I built her a site with a CMS (Content management system) so that she can add, remove and update her content without asking me. \
         I built this site after working as a fullstack developer at AltSource for 4 month with a software developer title. The frontend is using VueJS combo\'d with \
         Vuetify to speed up website creation. The API was built using ASP.NET and a ORM to manage the database. Several optimizations were added to handle images, \
@@ -172,16 +176,33 @@ export default class Projects extends Vue {
       ],
     },
   ];
+
+  // private get isOverflowing() {
+  //    var element = this.$refs.text;
+  //     return (element.inner < element.scrollHeight || element.offsetWidth < element.scrollWidth)
+  //   }
+  // }
 }
+
 </script>
 
 <style scoped>
 #projects-container {
-  width: 70vw;
+  width: 80vw;
+}
+
+#projects-container-large {
+  width: 100vw;
+  margin-left: -32px;
 }
 
 #projects-window {
-  height: calc(90vh - 300px);
+  height: calc(90vh - 250px);
+}
+
+#projects-window-large {
+  height: calc(100vh - 300px);
+  margin-top: 40px;
 }
 
 .active-project-link {
@@ -213,15 +234,16 @@ export default class Projects extends Vue {
 }
 
 .project-info {
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 .project {
   height: 100%;
+  overflow-y: scroll
 }
 
 .project-description {
-  padding: 40px 10px;
-  max-height: 425px;
+  padding: 20px 10px;
 }
+
 </style>

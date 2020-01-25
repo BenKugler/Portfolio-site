@@ -34,6 +34,7 @@ class Visual {
     }
 
     resizeCanvas() {
+        this.canvas = document.querySelector('#flow-canvas');
         this.canvasWidth = document.body.offsetWidth;
         this.canvasHeight = document.body.offsetHeight;
         this.canvas.width = this.canvasWidth * window.devicePixelRatio;

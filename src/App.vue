@@ -70,7 +70,7 @@ body {
 p {
   font-family: 'Titillium Web', sans-serif !important;
   font-weight: 300;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.4 !important;
   text-align: left;
 }
@@ -86,7 +86,7 @@ h4 {
   font-family: 'Titillium Web', sans-serif !important;
   font-weight: 300;
   color: #e6e6e6;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-style: italic;
   padding-top: 10px;
 }

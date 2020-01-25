@@ -1,13 +1,14 @@
 <template>
   <v-container :id="this.$store.getters.homeSelector()">
     <v-row align="center" justify="center">
-      <font class="headline-custom">Home</font>
       <!-- <canvas id="game-of-life-wasm-canvas" height="150" width="150" /> -->
       <v-container class="d-flex justify-center" style="padding-top: 100px">
-        <v-card style="height: 750px; overflow: hidden;" elevation="4">
-          <video class="temp-gif" controls>
-            <source src="../assets/GenOutputG1000W750.webm" />
-          </video>
+        <v-card style="height: 60vh">
+          <div>
+            <video class="temp-gif" controls>
+              <source src="../assets/GenOutputG1000W750.webm" />
+            </video>
+          </div>
         </v-card>
       </v-container>
     </v-row>
@@ -42,6 +43,6 @@ export default class Home extends Vue {
 
 <style scoped>
 .temp-gif {
-  width: 750px;
+  width: 60vh;
 }
 </style>

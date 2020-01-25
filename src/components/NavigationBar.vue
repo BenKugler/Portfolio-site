@@ -71,8 +71,8 @@ export default class NavigationBar extends Vue {
 #nav-container {
   position: fixed;
   width: 100%;
-  margin-top: -15px;
   z-index: 999;
+  padding: 0px;
 }
 
 #nav-container-background {
